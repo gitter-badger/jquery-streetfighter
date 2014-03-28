@@ -21,19 +21,21 @@ $(document).ready(function(){
             });
     })
     .mouseup(function(){
-        //hadouken sound off
         $('.ryu-ready').show();
         $('.ryu-throwing').hide();
         $('.hadouken').hide();
     });
-   /* .keydown("x",function(){
-        $('.ryu-ready').hide();
-        $('.ryu-cool').show();
-    })
-    .keyup("x",function(){
-        $('.ryu-ready').show();
-        $('.ryu-cool').hide();
-    });*/
+    $('#main').finish().keydown(function(letter){
+        if (letter.which==88){
+            $('.ryu-ready').hide();
+            $('.ryu-cool').show();
+            }
+    });
+    $('#main').finish().keyup(function(letter) {
+         if (letter.which==88){
+            $('.ryu-ready').show();
+            $('.ryu-cool').hide();}
+    });
 });
 function playHadouken () {
   $('#hadouken-sound')[0].volume = 1;
