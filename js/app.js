@@ -48,3 +48,8 @@ function playHadouken () {
   $('#hadouken-sound')[0].load();
   $('#hadouken-sound')[0].play();
 }
+function playTooCool () {
+  $('#tooCool')[0].volume = 1;
+  $('#tooCool')[0].load();
+  $('#tooCool')[0].play();
+}
