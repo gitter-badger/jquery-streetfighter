@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.ryu').mouseenter(function(){
+    $('.main').mouseenter(function(){
         $('.ryu-still').hide();
         $('.ryu-ready').show();
     })
@@ -19,15 +19,21 @@ $(document).ready(function(){
                 $(this).hide();
                 $(this).css('left', '509px');
             });
+        $('.explanation').hide();
+        $('.whoa').show();
     })
     .mouseup(function(){
         $('.ryu-ready').show();
         $('.ryu-throwing').hide();
         $('.hadouken').hide();
+        $('.explanation').show();
+        $('.whoa').hide();
     });
     $('#main').finish().keydown(function(letter){
         if (letter.which==88){
             $('.ryu-ready').hide();
+            $('.ryu-still').hide();
+            $('.ryu-throwing').hide();
             $('.ryu-cool').show();
             }
     });

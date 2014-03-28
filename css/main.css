@@ -40,7 +40,7 @@ body {
   top: -325px;
   left: 509px;
 }
-.explanation {
+.explanation, .whoa {
     position: relative;
     float: right;
     top:-431px;
@@ -48,4 +48,10 @@ body {
     font-size: 2.5em;
     font-family: Tahoma, Arial, Helvetica, sans-serif;
     color: #454545;
+}
+.whoa {
+    display: none;
+    color: #ee2222;
+    font-size: 7.5em;
+    font-weight: bold;
 }
